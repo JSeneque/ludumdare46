@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthItem : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
     public GameObject effect;
-    private Transform player;
+    protected Transform player;
 
-    void Awake()
+    protected virtual void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-
-    public void Use()
+    protected virtual void Use()
     {
-        Instantiate(effect, player.position, Quaternion.identity);
-        Destroy(gameObject);
+        // to be overridden
     }
 }
