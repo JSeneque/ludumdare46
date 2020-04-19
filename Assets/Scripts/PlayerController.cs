@@ -7,17 +7,29 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
+
+    public bool canMove = true;
+
+    public static PlayerController instance;
     // Start is called before the first frame update
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput.normalized * speed;
+        if (canMove)
+        {
+            Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            moveVelocity = moveInput.normalized * speed;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 
     private void FixedUpdate()
