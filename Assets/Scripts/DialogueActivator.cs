@@ -17,13 +17,13 @@ public class DialogueActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canActivate && Input.GetButtonDown("Fire1") && !DialogueManager.instance.dialogueBox.activeInHierarchy)
+        if(canActivate && Input.GetKeyUp(KeyCode.Space) && !DialogueManager.instance.dialogueBox.activeInHierarchy)
         {
             DialogueManager.instance.ShowDialogue(lines, isPerson);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Player")
         {

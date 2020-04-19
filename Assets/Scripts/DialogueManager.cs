@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (dialogueBox.activeInHierarchy)
         {
-            if (Input.GetButtonUp("Fire1"))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 if (!started)
                 {
