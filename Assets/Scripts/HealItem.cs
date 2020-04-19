@@ -5,9 +5,10 @@ using UnityEngine;
 public class HealItem : Interactable
 {
 
-    protected override void Use()
+    public override void Use()
     {
+        base.Use();
         Instantiate(effect, player.position, Quaternion.identity);
-        Destroy(gameObject);
+        
     }
 }

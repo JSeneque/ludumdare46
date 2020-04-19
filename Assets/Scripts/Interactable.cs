@@ -11,8 +11,8 @@ public abstract class Interactable : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    protected virtual void Use()
+    public virtual void Use()
     {
-        // to be overridden
+        Destroy(gameObject);
     }
 }

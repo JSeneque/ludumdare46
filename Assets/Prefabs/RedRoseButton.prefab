@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4424480324635426965}
   - component: {fileID: 4424480324635426964}
   - component: {fileID: -5969676022599667445}
-  - component: {fileID: 6158611625099204296}
+  - component: {fileID: 7875430685634485737}
   m_Layer: 5
   m_Name: RedRoseButton
   m_TagString: Untagged
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6158611625099204296}
+      - m_Target: {fileID: 7875430685634485737}
         m_MethodName: Use
         m_Mode: 1
         m_Arguments:
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 7771537285658075365, guid: 25954b387eee27f4ba551071c8197630, type: 3}
---- !u!114 &6158611625099204296
+--- !u!114 &7875430685634485737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,7 +152,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4424480324635426966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74b7311c54f650d47bcf63939c0c755f, type: 3}
+  m_Script: {fileID: 11500000, guid: 28693a0ddf460b44c8ef538677eb6696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: {fileID: 6023238019485439066, guid: 0355c5ca580738248a476abd9adf218a, type: 3}
+  effect: {fileID: 0}
+  dropDistance: 1
