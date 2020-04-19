@@ -20,6 +20,15 @@ TextureImporter:
   - first:
       213: 7681903327190599789
     second: world_3
+  - first:
+      213: -537546834969883841
+    second: world_2
+  - first:
+      213: -8437133402429427106
+    second: world_3
+  - first:
+      213: -8394178656355457090
+    second: world_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -197,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce19701b013f5f750800000000000000
-      internalID: 6338239303608930796
+      spriteID: f3b0c7b60004a88f0800000000000000
+      internalID: -537546834969883841
       vertices: []
       indices: 
       edges: []
@@ -218,8 +227,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d684618206a9b9a60800000000000000
-      internalID: 7681903327190599789
+      spriteID: e527c915fd749ea80800000000000000
+      internalID: -8437133402429427106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb764ce7cf2e18b80800000000000000
+      internalID: -8394178656355457090
       vertices: []
       indices: 
       edges: []
