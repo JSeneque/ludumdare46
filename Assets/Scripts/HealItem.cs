@@ -8,7 +8,7 @@ public class HealItem : Interactable
     public override void Use()
     {
         base.Use();
-        Instantiate(effect, player.position, Quaternion.identity);
-        
+        Instantiate(effect, player.transform.position, Quaternion.identity);
+        player.GetComponent<HeartSystem>().Heal(1);
     }
 }

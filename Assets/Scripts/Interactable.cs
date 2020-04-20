@@ -5,11 +5,11 @@ using UnityEngine;
 public abstract class Interactable : MonoBehaviour
 {
     public GameObject effect;
-    protected Transform player;
+    protected GameObject player;
 
     protected virtual void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = PlayerController.instance.gameObject;
     }
     public virtual void Use()
     {

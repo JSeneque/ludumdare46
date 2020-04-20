@@ -6,6 +6,8 @@ public class FlowerItem : Interactable
 {
     private GameObject cauldron;
     public float dropDistance = 0.5f;
+    public GameObject potion;
+    public Color brewingColour;
 
     
     public override void Use()
@@ -19,6 +21,9 @@ public class FlowerItem : Interactable
         if ( distance <= dropDistance)
         {
             base.Use();
+
+            cauldron.GetComponent<Cauldron>().SetColour(brewingColour);
+            cauldron.GetComponent<Cauldron>().potion = potion;
             cauldron.GetComponent<Cauldron>().Brew();
         }
     }

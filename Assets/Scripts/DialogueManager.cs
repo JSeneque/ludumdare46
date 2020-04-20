@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
 
     public static DialogueManager instance;
 
-    private bool started = true;
+    private bool started = false;
 
     void Awake()
     {
@@ -27,7 +27,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (dialogueBox.activeInHierarchy)
         {
-            if (Input.GetKeyUp(KeyCode.Space))
+            //if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKeyUp("space"))
             {
                 if (!started)
                 {
@@ -47,7 +48,7 @@ public class DialogueManager : MonoBehaviour
                 else
                 {
                     started = false;
-                } 
+                }
             }
         }
     }

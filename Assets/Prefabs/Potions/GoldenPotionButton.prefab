@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4424480324635426965}
   - component: {fileID: 4424480324635426964}
   - component: {fileID: -5969676022599667445}
-  - component: {fileID: 7875430685634485737}
+  - component: {fileID: -4528154478534753646}
   m_Layer: 5
-  m_Name: RedRoseButton
+  m_Name: GoldenPotionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3789917e8ea81714fb0425e208c4a30d, type: 3}
+  m_Sprite: {fileID: -6036721896208478091, guid: 477c21a07ad5b4943badc7b9d84e4c52,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7875430685634485737}
+      - m_Target: {fileID: -4528154478534753646}
         m_MethodName: Use
         m_Mode: 1
         m_Arguments:
@@ -142,8 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0068163479e965846b6269b9bf599237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 6092491607775855915, guid: 0888f2be07fcf264abdd5dae9e0c18f6, type: 3}
---- !u!114 &7875430685634485737
+  item: {fileID: 7771537285658075365, guid: 695d53532a9f5d447ad47d9b9865d99e, type: 3}
+--- !u!114 &-4528154478534753646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,8 +153,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4424480324635426966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28693a0ddf460b44c8ef538677eb6696, type: 3}
+  m_Script: {fileID: 11500000, guid: e5a61ce2c6ad03443851c8aaa07d551d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: {fileID: 0}
-  dropDistance: 1
+  effect: {fileID: 7862906294652533336, guid: aeb774f5cabe9f2479775d1524ca4c02, type: 3}
+  offset: -0.629

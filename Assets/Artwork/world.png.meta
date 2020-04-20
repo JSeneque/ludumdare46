@@ -29,6 +29,78 @@ TextureImporter:
   - first:
       213: -8394178656355457090
     second: world_4
+  - first:
+      213: 1539640157653700178
+    second: world_4
+  - first:
+      213: 7104919503858039896
+    second: GreenFlower
+  - first:
+      213: -1933240692946450925
+    second: RedFlower
+  - first:
+      213: -6392011840319975046
+    second: GoldenFlower
+  - first:
+      213: 2652829271182442201
+    second: OrangeFlower
+  - first:
+      213: -4396711277690886595
+    second: GreenFlower
+  - first:
+      213: -2946166666526997121
+    second: RedFlower
+  - first:
+      213: -7642357779263981281
+    second: GoldenFlower
+  - first:
+      213: -3340430285687904588
+    second: OrangeFlower
+  - first:
+      213: 6827120152830382756
+    second: GreenPotion
+  - first:
+      213: -4396711277690886595
+    second: GreenFlower
+  - first:
+      213: -2946166666526997121
+    second: RedFlower
+  - first:
+      213: -7642357779263981281
+    second: GoldenFlower
+  - first:
+      213: -3340430285687904588
+    second: OrangeFlower
+  - first:
+      213: 7358291132821443234
+    second: SlimePotion
+  - first:
+      213: -5677930589685830673
+    second: HealPotion
+  - first:
+      213: 7104919503858039896
+    second: GreenFlower
+  - first:
+      213: -1933240692946450925
+    second: RedFlower
+  - first:
+      213: -6392011840319975046
+    second: GoldenFlower
+  - first:
+      213: 2652829271182442201
+    second: OrangeFlower
+  - first:
+      213: 6827120152830382756
+    second: SlimePotion
+  - first:
+      213: -7168787169427388304
+    second: HealPotion
+  - first:
+      213: -6036721896208478091
+    second: RestoreLifePotion
+  - first:
+      213: 8387156426414362770
+    second: FireImmunityPotion
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -248,8 +320,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb764ce7cf2e18b80800000000000000
-      internalID: -8394178656355457090
+      spriteID: 25e00e6e096ed5510800000000000000
+      internalID: 1539640157653700178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenFlower
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cf33135aeb99260800000000000000
+      internalID: 7104919503858039896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedFlower
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316c89f15dfbb25e0800000000000000
+      internalID: -1933240692946450925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldenFlower
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7113a9f8130b47a0800000000000000
+      internalID: -6392011840319975046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangeFlower
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de7696ba2eb0d420800000000000000
+      internalID: 2652829271182442201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimePotion
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a29d5c7b9dcebe50800000000000000
+      internalID: 6827120152830382756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPotion
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07807ef1d0a538c90800000000000000
+      internalID: -7168787169427388304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestoreLifePotion
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570dba85b61493ca0800000000000000
+      internalID: -6036721896208478091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireImmunityPotion
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2901010355a256470800000000000000
+      internalID: 8387156426414362770
       vertices: []
       indices: 
       edges: []
