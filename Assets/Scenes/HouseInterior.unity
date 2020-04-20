@@ -1621,8 +1621,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Hi
-  isPerson: 0
+  - n-Marlon
+  - What took you so long!
+  - n-Lilja
+  - How about you get out of bed lazy
+  - n-Marlon
+  - '*Cough* *Cough*'
+  - I'm actually dying you fool.
+  - I need you to find a rare Golden flower
+  - n-Lilja
+  - Haha you are joking right
+  isPerson: 1
 --- !u!1001 &662670667
 PrefabInstance:
   m_ObjectHideFlags: 0
