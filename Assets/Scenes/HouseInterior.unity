@@ -1549,7 +1549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400896365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.41, y: 0.56, z: 0}
+  m_LocalPosition: {x: 3.54, y: 3.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 377204540}
@@ -1595,7 +1595,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.41, y: -0.25}
+  m_Offset: {x: -0.053186417, y: -0.7333257}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1606,7 +1606,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7244473, y: 3.383891}
+  m_Size: {x: 5.0202427, y: 4.3505425}
   m_EdgeRadius: 0
 --- !u!114 &400896370
 MonoBehaviour:
@@ -1617,20 +1617,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 400896365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5e34b6493d1ae49948b5169d53f94b, type: 3}
+  m_Script: {fileID: 11500000, guid: 809240e096345f54b90a6826e889894f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines:
+  dialogueBox: {fileID: 1313189910}
+  nameBox: {fileID: 871711044}
+  dialogueText: {fileID: 1296954761}
+  nameText: {fileID: 1335531690}
+  dialogue:
   - n-Marlon
-  - What took you so long!
+  - '*Cough* *Cough* What took you so long!'
   - n-Lilja
-  - How about you get out of bed lazy
+  - How about you get out of bed you lazy bum
   - n-Marlon
-  - '*Cough* *Cough*'
-  - I'm actually dying you fool.
-  - I need you to find a rare Golden flower
+  - '*Cough* *Cough* '
   - n-Lilja
-  - Haha you are joking right
+  - On the other hand, you don't sound too good
+  - n-Marlon
+  - Lilja, I'm dying and I need you to find me the rare Golden Flower
+  - n-Lilja
+  - You must be sick, all this talk of a flower that no-one has ever seen
+  - n-Marlon
+  - Please... *cough* [his head rolls to the side]
+  - n-Lilja
+  - MARLON! Crap! Hang in there!!
   isPerson: 1
 --- !u!1001 &662670667
 PrefabInstance:
@@ -2486,12 +2496,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 662670667}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1296954761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2067420414, guid: 2c7055dd0a943b5448d8747090fb6c3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 662670667}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1313189910 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 993090489, guid: 2c7055dd0a943b5448d8747090fb6c3e,
     type: 3}
   m_PrefabInstance: {fileID: 662670667}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1335531690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1467696180, guid: 2c7055dd0a943b5448d8747090fb6c3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 662670667}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853257845
 GameObject:
   m_ObjectHideFlags: 0

@@ -27004,6 +27004,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 2029057973}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1775345382}
     - target: {fileID: 8370505840669035797, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
       propertyPath: m_Name
@@ -27373,7 +27377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474407698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.72, y: -10.35, z: -10}
+  m_LocalPosition: {x: 8.1, y: -19, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -27393,8 +27397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 33091069}
   smoothing: 0.1
-  maxPosition: {x: 14, y: -6}
-  minPosition: {x: 11, y: -19}
+  maxPosition: {x: 17, y: -6}
+  minPosition: {x: 8, y: -19}
 --- !u!95 &474407703
 Animator:
   serializedVersion: 3
@@ -34042,6 +34046,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1775345382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1467696180, guid: 2c7055dd0a943b5448d8747090fb6c3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 347078494007620835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1797093659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6689745441491246535, guid: 0a81a25532540cd48984295cfe7cf5f6,
@@ -34335,6 +34351,43 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 74034495}
     m_Modifications:
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 842374214}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 2029057973}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1675995410}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1775345382}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: I didn't have a win or loss screen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: for a better experience
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Well this is embarassing. I had more great puzzle to come like a fire
+        potion so you could pass the fire pits... [more]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: I need to be better prepared with pre-made code... [more]
+      objectReference: {fileID: 0}
     - target: {fileID: 8370505840669035797, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
       propertyPath: m_Name
@@ -35408,6 +35461,15 @@ PrefabInstance:
       propertyPath: dialogue
       value: Place flowers in the cauldron by stand next to it and clicking on the
         flower in the slot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: You can put flowers in the cauldron to make potions...[more]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: While standing near the cauldron with a flower in a slot, click on the
+        flower to put it in the cauldron
       objectReference: {fileID: 0}
     - target: {fileID: 8370505840669035797, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}

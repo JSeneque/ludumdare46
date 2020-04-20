@@ -182,5 +182,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 0}
   nameBox: {fileID: 0}
   dialogueText: {fileID: 0}
-  dialogue: Play the game in full screen so you can see the full camera view
-  playerInRange: 0
+  dialogue:
+  - Play game in fullscreen...
+  - for a better experience
+  isPerson: 0

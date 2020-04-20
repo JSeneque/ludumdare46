@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sign : MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
     public GameObject dialogueBox;
     public GameObject nameBox;
     public Text dialogueText;
-    public string dialogue;
-    public bool playerInRange;
+    public Text nameText;
+    public string[] dialogue;
+    public bool isPerson = true;
+
+    private int currentLine;
+    private bool playerInRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,15 +25,24 @@ public class Sign : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space) && playerInRange)
         {
-            if(dialogueBox.activeInHierarchy)
+            if(dialogueBox.activeInHierarchy && currentLine >= dialogue.Length)
             {
                 dialogueBox.SetActive(false);
+                currentLine = 0;
             }
             else
             {
                 dialogueBox.SetActive(true);
-                nameBox.SetActive(false);
-                dialogueText.text = dialogue;
+
+                if (!isPerson)
+                    nameBox.SetActive(false);
+                else
+                    nameBox.SetActive(true);
+
+                CheckIfNameChange();
+                dialogueText.text = dialogue[currentLine];
+                currentLine++;
+
             }
         }
     }
@@ -48,6 +61,16 @@ public class Sign : MonoBehaviour
         {
             playerInRange = false;
             dialogueBox.SetActive(false);
+            currentLine = 0;
+        }
+    }
+
+    private void CheckIfNameChange()
+    {
+        if (dialogue[currentLine].StartsWith("n-"))
+        {
+            nameText.text = dialogue[currentLine].Replace("n-", "");
+            currentLine++;
         }
     }
 }
