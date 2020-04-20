@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3125040219111467237}
   - component: {fileID: 3125040219111467806}
   - component: {fileID: 1987485934}
-  - component: {fileID: 1987485935}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -193,22 +192,5 @@ MonoBehaviour:
   - {fileID: 0}
   fullHeart: {fileID: 21300000, guid: e86e9cb940debf642888500093b36f7f, type: 3}
   emptyHeart: {fileID: 21300000, guid: 585d886f1ca5f754e91425aa963df52c, type: 3}
-  health: 0
-  healthMax: 0
---- !u!114 &1987485935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3125040219111467236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfacbad00f0127d44a969d5dabc5d238, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  fullHeart: {fileID: 0}
-  emptyHeart: {fileID: 0}
   health: 0
   healthMax: 0

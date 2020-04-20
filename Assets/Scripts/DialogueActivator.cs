@@ -5,25 +5,25 @@ using UnityEngine;
 public class DialogueActivator : MonoBehaviour
 {
     public string[] lines;
-    public bool isPerson = true;
+    //public bool isPerson = true;
 
     private bool canActivate;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //// Start is called before the first frame update
+    //void Start()
+    //{
 
-    // Update is called once per frame
+    //}
+
+    //// Update is called once per frame
     void Update()
     {
-        if(canActivate && Input.GetKeyUp(KeyCode.Space) && !DialogueManager.instance.dialogueBox.activeInHierarchy)
+        if (canActivate && Input.GetButtonUp("Fire1") && !DialogueManager.instance.dialogueBox.activeInHierarchy)
         {
-            DialogueManager.instance.ShowDialogue(lines, isPerson);
+            DialogueManager.instance.ShowDialogue(lines);//, isPerson);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
@@ -38,4 +38,7 @@ public class DialogueActivator : MonoBehaviour
             canActivate = false;
         }
     }
+
+
+
 }

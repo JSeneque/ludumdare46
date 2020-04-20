@@ -26588,6 +26588,7 @@ Transform:
   m_Children:
   - {fileID: 1797093659}
   - {fileID: 1033466352}
+  - {fileID: 1908453032}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26991,10 +26992,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 890824614}
     m_Modifications:
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 842374214}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1675995410}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 2029057973}
     - target: {fileID: 8370505840669035797, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
       propertyPath: m_Name
-      value: Sign (1)
+      value: Sign
       objectReference: {fileID: 0}
     - target: {fileID: 8370505840669035799, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
@@ -27050,11 +27063,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8370505840669035801, guid: 34775905d81edcb4f891ca31fa38fd77,
-        type: 3}
-      propertyPath: lines.Array.data[0]
-      value: Play this game in full screen to see the whole camera view
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
@@ -28216,6 +28224,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 756268465}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &842374214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 993090489, guid: 2c7055dd0a943b5448d8747090fb6c3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 347078494007620835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &843568054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28358,7 +28372,6 @@ Transform:
   - {fileID: 425009944}
   - {fileID: 543194589}
   - {fileID: 311550670}
-  - {fileID: 1908453032}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33874,6 +33887,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1647488101}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1675995410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1106984508, guid: 2c7055dd0a943b5448d8747090fb6c3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 347078494007620835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1682225118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34314,7 +34333,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 890824614}
+    m_TransformParent: {fileID: 74034495}
     m_Modifications:
     - target: {fileID: 8370505840669035797, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
@@ -34324,12 +34343,12 @@ PrefabInstance:
     - target: {fileID: 8370505840669035799, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.28
+      value: 31.778566
       objectReference: {fileID: 0}
     - target: {fileID: 8370505840669035799, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.41
+      value: -1.8190184
       objectReference: {fileID: 0}
     - target: {fileID: 8370505840669035799, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
@@ -34359,7 +34378,7 @@ PrefabInstance:
     - target: {fileID: 8370505840669035799, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8370505840669035799, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
@@ -34710,6 +34729,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2012596340}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2029057973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2067420414, guid: 2c7055dd0a943b5448d8747090fb6c3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 347078494007620835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2060973483
 GameObject:
   m_ObjectHideFlags: 0
@@ -34883,6 +34914,38 @@ PrefabInstance:
     - target: {fileID: 321091103, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 535728238, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 535728238, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: This
+      objectReference: {fileID: 0}
+    - target: {fileID: 535728238, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: is
+      objectReference: {fileID: 0}
+    - target: {fileID: 535728238, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 535728238, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 535728238, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: box
+      objectReference: {fileID: 0}
+    - target: {fileID: 535728238, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993090489, guid: 2c7055dd0a943b5448d8747090fb6c3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 347078494579022093, guid: 2c7055dd0a943b5448d8747090fb6c3e,
         type: 3}
@@ -35329,6 +35392,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 890824614}
     m_Modifications:
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 842374214}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1675995410}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 2029057973}
+    - target: {fileID: 1426194101, guid: 34775905d81edcb4f891ca31fa38fd77, type: 3}
+      propertyPath: dialogue
+      value: Place flowers in the cauldron by stand next to it and clicking on the
+        flower in the slot
+      objectReference: {fileID: 0}
     - target: {fileID: 8370505840669035797, guid: 34775905d81edcb4f891ca31fa38fd77,
         type: 3}
       propertyPath: m_Name

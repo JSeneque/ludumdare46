@@ -91,8 +91,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8370505840669035799}
   - component: {fileID: 8370505840669035798}
-  - component: {fileID: 8370505840669035801}
   - component: {fileID: 8370505840669035796}
+  - component: {fileID: 1426194101}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Untagged
@@ -127,8 +127,8 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0.0041121244, y: -0.26728088}
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.016177654, y: 0.010222882}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -139,23 +139,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.30095792, y: 0.30095816}
+  m_Size: {x: 0.8720541, y: 0.8559657}
   m_EdgeRadius: 0
---- !u!114 &8370505840669035801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370505840669035797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5e34b6493d1ae49948b5169d53f94b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines:
-  - Flowers are brewed in the Cauldron to make potions
-  isPerson: 0
 --- !u!61 &8370505840669035796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -169,7 +154,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.48443902, y: 0.42977405}
+  m_Offset: {x: 0.004558563, y: -0.8390622}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -180,5 +165,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3975646, y: 2.1324425}
+  m_Size: {x: 0.88471985, y: 2.4903212}
   m_EdgeRadius: 0
+--- !u!114 &1426194101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8370505840669035797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809240e096345f54b90a6826e889894f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  nameBox: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogue: Play the game in full screen so you can see the full camera view
+  playerInRange: 0

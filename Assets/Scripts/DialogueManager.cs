@@ -15,67 +15,67 @@ public class DialogueManager : MonoBehaviour
 
     public static DialogueManager instance;
 
-    private bool started = false;
+    //private bool started = false;
 
-    void Awake()
+    void Start()
     {
         instance = this;
     }
 
-    // Update is called once per frame
+    //// Update is called once per frame
     void Update()
     {
         if (dialogueBox.activeInHierarchy)
         {
-            //if (Input.GetKeyUp(KeyCode.Space))
-            if (Input.GetKeyUp("space"))
+    //        //if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetButtonUp("Fire1"))
             {
-                if (!started)
-                {
+    //            if (!started)
+    //            {
                     currentSentence++;
 
-                    if (currentSentence >= dialogueLines.Length)
-                    {
-                        dialogueBox.SetActive(false);
-                        PlayerController.instance.canMove = true;
-                    }
-                    else
-                    {
-                        CheckIfNameChange();
-                        dialogueText.text = dialogueLines[currentSentence];
-                    }
-                }
+                                if (currentSentence >= dialogueLines.Length)
+                                {
+                                    dialogueBox.SetActive(false);
+                //                    PlayerController.instance.canMove = true;
+                                }
                 else
                 {
-                    started = false;
-                }
+                //                    CheckIfNameChange();
+                dialogueText.text = dialogueLines[currentSentence];
+                                }
+                //            }
+                //            else
+                //            {
+                //                started = false;
+                //            }
             }
         }
     }
 
-    public void ShowDialogue(string[] lines, bool isPerson)
+    public void ShowDialogue(string[] lines)//, bool isPerson)
     {
         dialogueLines = lines;
         currentSentence = 0;
 
-        CheckIfNameChange();
+        //    CheckIfNameChange();
 
         dialogueText.text = dialogueLines[currentSentence];
         dialogueBox.SetActive(true);
 
-        started = true;
+        //    started = true;
 
-        nameBox.SetActive(isPerson);
+        //    nameBox.SetActive(isPerson);
 
-        PlayerController.instance.canMove = false;
-    }
+        //    PlayerController.instance.canMove = false;
+        //}
 
-    private void CheckIfNameChange()
-    {
-        if(dialogueLines[currentSentence].StartsWith("n-"))
-        {
-            nameText.text = dialogueLines[currentSentence].Replace("n-", "");
-            currentSentence++;
+        //private void CheckIfNameChange()
+        //{
+        //    if(dialogueLines[currentSentence].StartsWith("n-"))
+        //    {
+        //        nameText.text = dialogueLines[currentSentence].Replace("n-", "");
+        //        currentSentence++;
+        //    }
         }
     }
-}
